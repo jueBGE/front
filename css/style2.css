@@ -1,0 +1,1243 @@
+*{
+	box-sizing:border-box;
+}
+
+/*.container{
+	max-width: 1300px;
+	}*/
+
+	.cl-color{
+		color:black;
+	}
+	.cl-color:hover{
+		color:#004A99;
+	}
+	.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{
+		padding: 0em;
+	}
+	.row{
+		margin:0em;
+		padding: 0em;
+	}
+	.container-fluid-header {
+		padding:0em;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	p, li{
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
+		line-height: 25px;
+	}
+	.alinea{
+		text-indent:50px;
+	}
+	.col-9-pad{
+		padding-left: 1em;
+	}
+	a:hover{
+		text-decoration: none;
+	}
+
+	/*---------------header---------------------*/
+
+	.cl-icones{
+		margin-right:1em;
+		text-align: center;
+		color:#004A99;
+	}
+
+	.cl-icones:hover{
+		color:#FF9900;
+		text-decoration: none;
+	}
+
+	.logoBGE{
+		width: 100%;
+	}
+
+	.logo-smartphone{
+		display: none;
+	}
+
+	/*NAV RESPONSIVE*/
+	/* adds some margin below the link sets  */
+	.cl-pad{
+		padding:1em; 
+	}
+
+	.navbar .dropdown-menu div[class*="col"] {
+		margin-bottom:1rem;
+	}
+	.navbar-dark .navbar-nav .nav-link {
+		color: white;
+	}
+
+/*.nav-link{
+border-bottom: transparent;
+}
+.nav-link:hover{
+border-bottom: 2px solid red;
+}*/
+
+.mr-auto, .mx-auto {
+	margin: auto;
+}
+.navbar {
+	padding: 0em;
+}
+.navbar-toggler {
+	background-color: #004a99;
+	border: 1px solid #004a99;
+}
+.bg-desktop{
+	width: 100%;
+	background-color: #004a9a;
+}
+.navbar-dark .navbar-toggler { 
+	border-color: #004a9a;
+}
+.dropdown-menu{
+	opacity: 0.95;
+}
+
+/*.cl-quisommesnous{
+background-color: none;
+}
+.cl-quisommesnous:hover{
+background-color: #009fe3;
+}
+.cl-entreprendre{
+background-color: none;
+}
+.cl-entreprendre:hover{
+background-color: #ff9900;
+}
+.cl-seformer{
+background-color: none;
+}
+.cl-seformer:hover{
+background-color: #81bb27;
+}
+.cl-emploi{
+background-color: none;
+}
+.cl-emploi:hover{
+background-color: #ffcc00;
+}
+.cl-associations{
+background-color: none;
+}
+.cl-associations:hover{
+background-color: #d5292b;
+}
+.cl-esp-num{
+background-color: none;
+}
+.cl-esp-num:hover{
+background-color: #009fe3;
+}*/
+
+.cl-blue{
+	opacity: 0.90;
+	background-color: #009fe3;
+}
+.cl-orange{
+	opacity: 0.90;
+	background-color: #FF9900;
+}
+.cl-green{
+	opacity: 0.90;
+	background-color: #7EBA29;
+}
+.cl-red{
+	opacity: 0.90;
+	background-color: #D5292B;
+}
+.cl-yellow{
+	opacity: 0.90;
+	background-color: #FFCC00;
+}
+.dropdown-menu {
+	background-color:#004A99; 
+}
+
+.section-marg-bottom{
+	padding-bottom: 3.5em;
+}
+/* breakpoint and up - mega dropdown styles */
+@media screen and (min-width: 992px) {
+	/* remove the padding from the navbar so the dropdown hover state is not broken */
+	.navbar {
+		padding-top:0px;
+		padding-bottom:0px;
+	}
+
+	/* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+	.navbar .nav-item {
+		padding:.5rem .5rem;
+		margin:0 .25rem;
+	}
+
+	/* makes the dropdown full width  */
+	.navbar .dropdown {position:static;}
+
+	.navbar .dropdown-menu {
+		width:100%;
+		left:0;
+		right:0;
+		/*  height of nav-item  */
+		top:53px;
+	}
+	/* shows the dropdown menu on hover */
+	.navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+		display:block!important;
+	}
+
+}
+
+/*fin media*/
+
+/*fin nav*/
+
+/*ROND / navigation couleurs*/
+
+.circle-desktop{
+	margin:10px;
+	width:210px;
+	background:#FF0000;
+	height:210px;
+	text-align:center;
+	border-radius:100%;
+	line-height: 200px; /* 10 - 10 */
+}
+
+.cl-format-desktop{
+	padding:2em;
+}
+.rond-couleur{
+	transition: all .2s ease-in-out;
+}
+
+.rond-couleur:hover{
+	transform: scale(1.1);
+}
+
+/*FORMAT SMARTPHONE*/
+.circle-smartphone{
+	margin: 1em;
+	padding: 1em;
+	border-radius: 100%;
+	width: 50px;
+	height: 50px;
+	box-shadow: 2px 2px 2px black;
+}
+.cl-format-smartphone{
+	display:none;
+}
+.cl-line{
+	border: 0; 
+	height: 1px; 
+	background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+
+/*LOGO EUROPE*/
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+/*COULEURS LIGNE*/
+.linebge{
+	text-decoration: underline;
+	color: #004a9a;
+	margin-bottom:1em;
+	font-family: 'Lato', sans-serif;
+}
+
+.lineactu{
+	text-decoration: underline;
+	color: #7EBA29;
+	margin-bottom:1em;
+	font-family: 'Lato', sans-serif;
+}
+
+.lineagenda{
+	text-decoration: underline;
+	color: #337ab7;
+	margin-bottom:1em;
+	font-family: 'Lato', sans-serif;
+}
+
+.linelemag{
+	text-decoration: underline;
+	color: #ffb308;
+	margin-bottom:1em;
+	font-family: 'Lato', sans-serif;
+}
+
+/*BACKGROUND BILLET*/
+.cl-back{
+	background-color: #dedede;
+	margin-bottom: 1.5em;
+	box-shadow: -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.cl-foot{
+	/*width: 100%;*/
+	background-color: #dedede;
+	padding-top: 2.5em;
+	padding-bottom: 2.5em;
+}
+
+/*icone bas*/
+.cl-space{
+	margin: 1em;
+}
+
+/*titre*/
+.titreh1{
+	font-family: 'Lato', sans-serif;
+	font-size: 35px;
+	margin-bottom: 1em;
+	margin-top: 0em;
+	text-decoration: underline;
+	text-decoration-color: #004a9a;
+}
+
+.titreh2{
+	text-align: center;
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-size: 25px;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	background-color: #004a9a;
+	border-radius: 10px;
+	padding: 0.5em;
+}
+.titreh3{
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	font-weight: bold;
+}
+
+/*AGENDA  date*/
+/*.cl-backdate{
+  	margin: 0  auto;
+	background-color:#337ab7;
+	text-align: center;
+	width:100px;
+	height:100px;
+	border-radius: 50%;
+	line-height: 90px; /* 100 - 10 */;
+	}*/
+
+	/*BOUTON ABONNE*/
+	.cl-btn{
+		background-color: #ffb308;
+		padding:1em;
+		border-radius: 10px 10px 10px 10px;
+	}
+	.cl-padding{
+		padding:0.7em;
+	}
+
+	/*SLIDER ACTUALITE ET CAROUSEL ENTREPRENEUR*/
+	.carousel{
+		width: 100%;
+		height: 100%;
+	}
+	.marg-bas{
+		padding:1em;
+	}
+
+	/*SLIDER PARTENAIRES*/
+	.slick-prev:before, .slick-next:before {
+		color: black;
+	}
+	.slick-next {
+		right: 0px; 
+	}
+	.slick-slide {
+		text-align: center;
+		color: black;
+		background: white;
+	}
+	.cl-partenaires{
+		width:30%;
+	}
+
+	/*MEDIA QUERY*/
+	@media screen and (max-width: 1200px){
+		.logoBGE{
+			display: none;
+		}
+		.desktop{
+			display:none;
+		}
+	}
+
+	@media screen and (max-width: 990px){
+		.section-marg-bottom{
+			padding-bottom: 0em;
+		}
+		.cl-back{
+			transition: none;
+			background-color: #dedede;
+			box-shadow: -webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+		}
+
+		.navbar-dark .navbar-nav .nav-link {
+			margin-left: 2em; 
+		}
+		.container-fluid{
+			padding: 0em;
+		}
+		.cl-format-desktop{
+			display:none;
+		}
+		.cl-format-smartphone{
+			display:initial;
+		}
+		.navbar-dark .navbar-toggler-icon {
+			background-image: url(../files/images/hamburger-smartphone.png);
+		}
+		.cl-pad{
+			display: none;
+		}
+		.desktop{
+			display:none;
+		}
+		.bg-smartphone{
+			background-color: #004a9a;
+		}
+		.logo-smartphone{
+			display:initial; 
+		}
+		.logoBGE{
+			display: none;
+		}
+		.navbar {
+			padding-right:0.5em;
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+		}
+
+	};
+
+	/*----------------- DLA --------------*/
+	.cl-a:link{
+		text-decoration: none;
+	}
+
+	.logodla{
+		margin-bottom: 2em;
+		padding-right: 0.5em;
+	}
+	/*ASIDE*/
+	#sidebar{
+		margin-bottom: 1em;
+		padding: 1em;
+	}
+	.sidequisommesnous{
+		background-color: #004a9a;
+	}
+
+	/*Video youtube*/
+	.video-container {
+		position: relative;
+		padding-bottom: 56.25%;
+		padding-top: 30px;
+		height: 0;
+		overflow: hidden;
+		margin-bottom: 1em;
+	}
+
+	.video-container iframe,  
+	.video-container object,  
+	.video-container embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.cl-font{
+		font-family: 'Lato', sans-serif;
+	}
+	.cl-ul{
+		padding: 0em;
+	}
+	.cl-ul:hover{
+		opacity: 0.90;
+	}
+
+	.cl-collapse{
+		color: white;
+		padding: 1em;
+		background-color: #9ab4d5;
+		border-radius: 30px;
+	}
+
+	.cl-h2accompagnement{
+		text-decoration: underline;
+		font-family: 'Lato', sans-serif;
+		font-size: 20px;
+		margin-bottom: 1em;
+		color: #9ab4d5;
+	}
+
+	@media screen and (max-width: 765px){
+		.col-9-pad{
+			padding-left: 0em;
+		}
+		#sidebar{
+			display: none;
+		}
+		.cl-marginh3phone{
+			margin-top: 1em;
+		}
+		.logodla{
+			margin-bottom: 2em;
+			padding-right: 0em;
+		}
+	}
+
+	/****CLASS FORMATION****/
+	.form_table{
+		width:99%;
+		border:0px;
+		padding:1;
+		border-spacing:1;
+		table-layout: fixed; 
+	}
+	.form_th1{
+		width:30%;
+		padding-left:10px;
+		font-size:18px;
+		text-transform: uppercase;
+		table-layout: fixed; 
+		word-wrap: break-word;   
+	}
+	.form_th3{
+		width:20%;
+		padding-left:10px;
+		font-size:16px;
+		background-color:#CCCCCC;
+		table-layout: fixed; 
+		word-wrap: break-word;   
+	}
+	.form_col1{
+		width:30%;
+		padding-left:10px;
+		background-color:#CCCCCC;
+		table-layout: fixed; 
+		word-wrap: break-word;   
+	}
+	.form_col2{
+		width:50%;
+		padding-left:30px;
+		font-size:14px;
+		table-layout: fixed; 
+		word-wrap: break-word;   
+	} 
+	.form_col3{
+		width:20%;
+		padding-left:10px;
+		table-layout: fixed; 
+		word-wrap: break-word;   
+	}
+	.form_ssTitre{
+		font-size:14px;
+		font-weight: bold;
+		padding-top:5px;
+	}
+	.form_pied{
+		width:70%;
+		background-color:#CCCCCC;
+		padding-left:30px;
+		padding-top:5px;
+		table-layout: fixed; 
+		word-wrap: break-word;   
+	}
+	.form_lePlus{
+		font-style:italic;
+		font-weight: bold;
+		padding-left:30px;
+	}
+	.form_txt{
+		font-size:14px;
+	}
+
+	/*ESPACE NUMERIQUE*/
+
+	.resp-container { 
+		position: relative; 
+		overflow: hidden;
+		padding-top: 1em; 
+	}
+	.wrapper1, .wrapper2, .wrapper3, .wrapper4, .wrapper5, .wrapper6 {
+		background-color: #dedede;
+		opacity:0.95;
+		border-radius: 10px;
+		padding: 1em;
+	}
+	.logo-partenaires{
+		padding: 1em;
+	}
+	.cl-underline{
+		text-decoration: underline;
+		font-weight: bold;
+	}
+	.cl-backcontact{
+		background-color: #dedede;
+		border-radius: 10px;
+	}
+
+	/*logo espace num*/
+	.img-vatan {
+		width: 40%;
+		height: 40%;
+		max-width: 100%;
+	}
+	.img-chabris{
+		width: 55%;
+		height: 55%;
+	}
+	.img-stbenoit{
+		width: 30%;
+		height: 30%;
+	}
+	.img-epn{
+		width: 75%;
+		height: 75%;
+	}
+
+
+
+
+	/*Nos equipes*/
+
+	.cl-services{
+		background-color:#FF9900;
+		width: 100%;
+		margin-bottom: 3em;
+		padding:1em;
+	}
+	
+	.wrap {
+		display:block;
+		max-width: 100%;
+		width: 250px;
+		height: 250px;
+		margin-bottom: 4px;
+		margin: 0 auto;
+	}
+
+/*Angele*/
+	.circle {
+		background-image: url(/BGE/files/images/trombi/TOUTAIN_Angele.jpg);
+		background-color: #bde3f2;
+		background-size: 70%;
+		text-align: center;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		width: 100%;
+		position: relative;
+		height: 100%;
+		border-radius: 50%;
+		-webkit-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+		-ms-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+		/*box-shadow: 0 0 0 16px rgba(255, 255, 255, 0.65) inset;*/
+		-moz-box-shadow: 10px 10px 5px #656565;
+		-webkit-box-shadow: 10px 10px 5px #656565;
+		-o-box-shadow: 10px 10px 5px #656565;
+		box-shadow: 10px 10px 5px #656565;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#6565', Direction=135, Strength=5);
+	}
+
+	.circle:hover{
+		/*box-shadow:  inset 0 0 0 1px rgba(255,255,255,0.1), 0 1px 2px rgba(0,0,0,0.1);*/
+		box-shadow:  inset 0 0 0 1px rgba(255,255,255,0.1);
+	}
+
+	/* rond noir */
+	.circle:hover .info {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1) ;
+		transform: scale(1);
+	}
+
+/*Edwige*/
+.circle2 {
+		background-image: url(/BGE/files/images/trombi/KOUAO_Edwige.jpg);
+		background-color: #bde3f2;
+		background-size: 100%;
+		text-align: center;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		width: 100%;
+		position: relative;
+		height: 100%;
+		border-radius: 50%;
+		-webkit-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+		-ms-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+		/*box-shadow: 0 0 0 16px rgba(255, 255, 255, 0.65) inset;*/
+		-moz-box-shadow: 10px 10px 5px #656565;
+		-webkit-box-shadow: 10px 10px 5px #656565;
+		-o-box-shadow: 10px 10px 5px #656565;
+		box-shadow: 10px 10px 5px #656565;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#6565', Direction=135, Strength=5);
+	}
+
+	.circle2:hover{
+		/*box-shadow:  inset 0 0 0 1px rgba(255,255,255,0.1), 0 1px 2px rgba(0,0,0,0.1);*/
+		box-shadow:  inset 0 0 0 1px rgba(255,255,255,0.1);
+	}
+
+	/* rond noir */
+	.circle2:hover .info {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1) ;
+		transform: scale(1);
+	}
+
+	/*Jean-louis*/
+	.circle3 {
+		background-image: url(/BGE/files/images/trombi/REUZEAU_Jean-Louis.jpg);
+		background-color: #bde3f2;
+		background-size: 100%;
+		text-align: center;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		width: 100%;
+		position: relative;
+		height: 100%;
+		border-radius: 50%;
+		-webkit-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+		-ms-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+		/*box-shadow: 0 0 0 16px rgba(255, 255, 255, 0.65) inset;*/
+		-moz-box-shadow: 10px 10px 5px #656565;
+		-webkit-box-shadow: 10px 10px 5px #656565;
+		-o-box-shadow: 10px 10px 5px #656565;
+		box-shadow: 10px 10px 5px #656565;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#6565', Direction=135, Strength=5);
+	}
+
+	.circle3:hover{
+		/*box-shadow:  inset 0 0 0 1px rgba(255,255,255,0.1), 0 1px 2px rgba(0,0,0,0.1);*/
+		box-shadow:  inset 0 0 0 1px rgba(255,255,255,0.1);
+	}
+
+	/* rond noir */
+	.circle3:hover .info {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1) ;
+		transform: scale(1);
+	}
+
+/*Jean-louis*/
+	.circle4 {
+		background-image: url(/BGE/files/images/trombi/BOUILLON_Jean-Louis.jpg);
+		background-color: #bde3f2;
+		background-size: 100%;
+		text-align: center;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		width: 100%;
+		position: relative;
+		height: 100%;
+		border-radius: 50%;
+		-webkit-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+		-ms-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+		/*box-shadow: 0 0 0 16px rgba(255, 255, 255, 0.65) inset;*/
+		-moz-box-shadow: 10px 10px 5px #656565;
+		-webkit-box-shadow: 10px 10px 5px #656565;
+		-o-box-shadow: 10px 10px 5px #656565;
+		box-shadow: 10px 10px 5px #656565;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#6565', Direction=135, Strength=5);
+	}
+
+	.circle4:hover{
+		/*box-shadow:  inset 0 0 0 1px rgba(255,255,255,0.1), 0 1px 2px rgba(0,0,0,0.1);*/
+		box-shadow:  inset 0 0 0 1px rgba(255,255,255,0.1);
+	}
+
+	/* rond noir */
+	.circle4:hover .info {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1) ;
+		transform: scale(1);
+	}
+
+	/*Roberto*/
+	.circle5 {
+		background-image: url(/BGE/files/images/trombi/ROSSINI_Roberto.jpg);
+		background-color: #bde3f2;
+		background-size: 70%;
+		text-align: center;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		width: 100%;
+		position: relative;
+		height: 100%;
+		border-radius: 50%;
+		-webkit-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+		-ms-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+		/*box-shadow: 0 0 0 16px rgba(255, 255, 255, 0.65) inset;*/
+		-moz-box-shadow: 10px 10px 5px #656565;
+		-webkit-box-shadow: 10px 10px 5px #656565;
+		-o-box-shadow: 10px 10px 5px #656565;
+		box-shadow: 10px 10px 5px #656565;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#6565', Direction=135, Strength=5);
+	}
+
+	.circle5:hover{
+		/*box-shadow:  inset 0 0 0 1px rgba(255,255,255,0.1), 0 1px 2px rgba(0,0,0,0.1);*/
+		box-shadow:  inset 0 0 0 1px rgba(255,255,255,0.1);
+	}
+
+	/* rond noir */
+	.circle5:hover .info {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1) ;
+		transform: scale(1);
+	}
+
+	/*Sakina*/
+	.circle6 {
+		background-image: url(/BGE/files/images/trombi/.jpg);
+		background-color: #bde3f2;
+		background-size: 100%;
+		text-align: center;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		width: 100%;
+		position: relative;
+		height: 100%;
+		border-radius: 50%;
+		-webkit-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+		-ms-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+		/*box-shadow: 0 0 0 16px rgba(255, 255, 255, 0.65) inset;*/
+		-moz-box-shadow: 10px 10px 5px #656565;
+		-webkit-box-shadow: 10px 10px 5px #656565;
+		-o-box-shadow: 10px 10px 5px #656565;
+		box-shadow: 10px 10px 5px #656565;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#6565', Direction=135, Strength=5);
+	}
+
+	.circle6:hover{
+		/*box-shadow:  inset 0 0 0 1px rgba(255,255,255,0.1), 0 1px 2px rgba(0,0,0,0.1);*/
+		box-shadow:  inset 0 0 0 1px rgba(255,255,255,0.1);
+	}
+
+	/* rond noir */
+	.circle6:hover .info {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1) ;
+		transform: scale(1);
+	}
+
+	/*Thibault*/
+	.circle7 {
+		background-image: url(/BGE/files/images/trombi/.jpg);
+		background-color: #bde3f2;
+		background-size: 100%;
+		text-align: center;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		width: 100%;
+		position: relative;
+		height: 100%;
+		border-radius: 50%;
+		-webkit-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+		-ms-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+		/*box-shadow: 0 0 0 16px rgba(255, 255, 255, 0.65) inset;*/
+		-moz-box-shadow: 10px 10px 5px #656565;
+		-webkit-box-shadow: 10px 10px 5px #656565;
+		-o-box-shadow: 10px 10px 5px #656565;
+		box-shadow: 10px 10px 5px #656565;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#6565', Direction=135, Strength=5);
+	}
+
+	.circle7:hover{
+		/*box-shadow:  inset 0 0 0 1px rgba(255,255,255,0.1), 0 1px 2px rgba(0,0,0,0.1);*/
+		box-shadow:  inset 0 0 0 1px rgba(255,255,255,0.1);
+	}
+
+	/* rond noir */
+	.circle7:hover .info {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1) ;
+		transform: scale(1);
+	}
+
+	/*Aurélie*/
+	.circle8 {
+		background-image: url(/BGE/files/images/trombi/LACHAUME_Aurélie.jpg);
+		background-color: #bde3f2;
+		background-size: 100%;
+		text-align: center;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		width: 100%;
+		position: relative;
+		height: 100%;
+		border-radius: 50%;
+		-webkit-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+		-ms-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+		/*box-shadow: 0 0 0 16px rgba(255, 255, 255, 0.65) inset;*/
+		-moz-box-shadow: 10px 10px 5px #656565;
+		-webkit-box-shadow: 10px 10px 5px #656565;
+		-o-box-shadow: 10px 10px 5px #656565;
+		box-shadow: 10px 10px 5px #656565;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#6565', Direction=135, Strength=5);
+	}
+
+	.circle8:hover{
+		/*box-shadow:  inset 0 0 0 1px rgba(255,255,255,0.1), 0 1px 2px rgba(0,0,0,0.1);*/
+		box-shadow:  inset 0 0 0 1px rgba(255,255,255,0.1);
+	}
+
+	/* rond noir */
+	.circle8:hover .info {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1) ;
+		transform: scale(1);
+	}
+
+/*Marion*/
+	.circle9 {
+		background-image: url(/BGE/files/images/trombi/LESAOUT_Marion.jpg);
+		background-color: #bde3f2;
+		background-size: 100%;
+		text-align: center;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		width: 100%;
+		position: relative;
+		height: 100%;
+		border-radius: 50%;
+		-webkit-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+		-ms-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+		/*box-shadow: 0 0 0 16px rgba(255, 255, 255, 0.65) inset;*/
+		-moz-box-shadow: 10px 10px 5px #656565;
+		-webkit-box-shadow: 10px 10px 5px #656565;
+		-o-box-shadow: 10px 10px 5px #656565;
+		box-shadow: 10px 10px 5px #656565;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#6565', Direction=135, Strength=5);
+	}
+
+	.circle9:hover{
+		/*box-shadow:  inset 0 0 0 1px rgba(255,255,255,0.1), 0 1px 2px rgba(0,0,0,0.1);*/
+		box-shadow:  inset 0 0 0 1px rgba(255,255,255,0.1);
+	}
+
+	/* rond noir */
+	.circle9:hover .info {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1) ;
+		transform: scale(1);
+	}
+
+	/*hugo*/
+	.circle10 {
+		background-image: url(/BGE/files/images/trombi/.jpg);
+		background-color: #bde3f2;
+		background-size: 100%;
+		text-align: center;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		width: 100%;
+		position: relative;
+		height: 100%;
+		border-radius: 50%;
+		-webkit-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+		-ms-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+		/*box-shadow: 0 0 0 16px rgba(255, 255, 255, 0.65) inset;*/
+		-moz-box-shadow: 10px 10px 5px #656565;
+		-webkit-box-shadow: 10px 10px 5px #656565;
+		-o-box-shadow: 10px 10px 5px #656565;
+		box-shadow: 10px 10px 5px #656565;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#6565', Direction=135, Strength=5);
+	}
+
+	.circle10:hover{
+		/*box-shadow:  inset 0 0 0 1px rgba(255,255,255,0.1), 0 1px 2px rgba(0,0,0,0.1);*/
+		box-shadow:  inset 0 0 0 1px rgba(255,255,255,0.1);
+	}
+
+	/* rond noir */
+	.circle10:hover .info {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1) ;
+		transform: scale(1);
+	}
+
+	/*Lili*/
+	.circle11 {
+		background-image: url(/BGE/files/images/trombi/.jpg);
+		background-color: #bde3f2;
+		background-size: 100%;
+		text-align: center;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		width: 100%;
+		position: relative;
+		height: 100%;
+		border-radius: 50%;
+		-webkit-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+		-ms-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+		/*box-shadow: 0 0 0 16px rgba(255, 255, 255, 0.65) inset;*/
+		-moz-box-shadow: 10px 10px 5px #656565;
+		-webkit-box-shadow: 10px 10px 5px #656565;
+		-o-box-shadow: 10px 10px 5px #656565;
+		box-shadow: 10px 10px 5px #656565;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#6565', Direction=135, Strength=5);
+	}
+
+	.circle11:hover{
+		/*box-shadow:  inset 0 0 0 1px rgba(255,255,255,0.1), 0 1px 2px rgba(0,0,0,0.1);*/
+		box-shadow:  inset 0 0 0 1px rgba(255,255,255,0.1);
+	}
+
+	/* rond noir */
+	.circle11:hover .info {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1) ;
+		transform: scale(1);
+	}
+
+	/*Jade*/
+	.circle12 {
+		background-image: url(/BGE/files/images/trombi/.jpg);
+		background-color: #bde3f2;
+		background-size: 100%;
+		text-align: center;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		width: 100%;
+		position: relative;
+		height: 100%;
+		border-radius: 50%;
+		-webkit-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+		-ms-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+		/*box-shadow: 0 0 0 16px rgba(255, 255, 255, 0.65) inset;*/
+		-moz-box-shadow: 10px 10px 5px #656565;
+		-webkit-box-shadow: 10px 10px 5px #656565;
+		-o-box-shadow: 10px 10px 5px #656565;
+		box-shadow: 10px 10px 5px #656565;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#6565', Direction=135, Strength=5);
+	}
+
+	.circle12:hover{
+		/*box-shadow:  inset 0 0 0 1px rgba(255,255,255,0.1), 0 1px 2px rgba(0,0,0,0.1);*/
+		box-shadow:  inset 0 0 0 1px rgba(255,255,255,0.1);
+	}
+
+	/* rond noir */
+	.circle12:hover .info {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1) ;
+		transform: scale(1);
+	}
+
+	/*Karim*/
+	.circle13 {
+		background-image: url(/BGE/files/images/trombi/.jpg);
+		background-color: #bde3f2;
+		background-size: 100%;
+		text-align: center;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		width: 100%;
+		position: relative;
+		height: 100%;
+		border-radius: 50%;
+		-webkit-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+		-ms-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+		/*box-shadow: 0 0 0 16px rgba(255, 255, 255, 0.65) inset;*/
+		-moz-box-shadow: 10px 10px 5px #656565;
+		-webkit-box-shadow: 10px 10px 5px #656565;
+		-o-box-shadow: 10px 10px 5px #656565;
+		box-shadow: 10px 10px 5px #656565;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#6565', Direction=135, Strength=5);
+	}
+
+	.circle13:hover{
+		/*box-shadow:  inset 0 0 0 1px rgba(255,255,255,0.1), 0 1px 2px rgba(0,0,0,0.1);*/
+		box-shadow:  inset 0 0 0 1px rgba(255,255,255,0.1);
+	}
+
+	/* rond noir */
+	.circle13:hover .info {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1) ;
+		transform: scale(1);
+	}
+
+
+	.info {
+		overflow: hidden;
+		color: #fff;
+		font-size: 12px;
+		text-align: center;
+		background-color:#FF9900;
+		border-radius: 10px;
+		width: inherit;
+		height: inherit;
+		opacity: 0;
+		top: 0;
+		right: 0;
+		left: 0;
+		position: absolute;
+		-webkit-transform: scale(0);
+		-moz-transform: scale(0);
+		-ms-transform: scale(0);
+		-o-transform: scale(0);
+		transform: scale(0);
+		-webkit-transition: ;
+		-moz-transition: all 0.4s ease-in-out 0s;
+		-ms-transition:all 0.4s ease-in-out 0s;
+		-o-transition: all 0.4s ease-in-out 0s;
+		transition: all 0.4s ease-in-out 0s;
+	}
+
+
+	/* textes rond noir */
+	.info .titre {
+		padding-bottom: 39px;
+		/*border-bottom: 1px solid #fff;*/
+		font-size: 13px;
+		margin: 0 35px 18px;
+		padding-top: 95px;
+		/*text-transform: uppercase;*/
+	}
+	.info span{
+		text-transform:uppercase;
+	}
+	.info  a {
+		text-transform: uppercase;
+		display: inline-block;
+		color: #d1cfcf;
+		margin-top: 9px;
+	}
+
+
+
+
+
+
+
+	/*Gototop*/
+
+	#gototop{
+		bottom: 0.5em;
+		right: 0.5em;
+		position: fixed;
+		z-index: 99;
+		border: none;
+		outline: none;
+		background-color:#004a9a; 
+		color: white;
+		cursor: pointer;
+		padding: 10px;
+		border-radius: 4px;
+	}
+	#gototop:hover{
+		background-color: #FF9900;
+	}
+	.arrow-top{
+		width: 30px;
+		height: 30px;
+	}

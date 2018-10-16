@@ -1,0 +1,170 @@
+*{
+  box-sizing:border-box;
+}
+
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+}
+
+/*body {
+  font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+  background: #456990;
+  color: #fff;
+  overflow-x: hidden;
+  padding-bottom: 50px;*/
+}  /* INTRO SECTION
+
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.intro {
+  background: #F45B69;
+  padding: 100px 0;
+}
+/*.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}*/
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/*.timeline .ulhistory {
+  background: #456990;
+  padding: 50px 0;
+}*/
+
+.ulhistory{
+padding-left: 0em;
+}
+.timeline .ulhistory .lihistory {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #004a9a;
+}
+
+.timeline .ulhistory .lihistory::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline .ulhistory .lihistory div {
+  position: relative;
+  bottom: 0;
+  width: 250px;
+  padding: 15px;
+  background: #dedede;
+  border-radius: 10px;
+}
+
+.timeline .ulhistory .lihistory div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline .ulhistory .lihistory:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline .ulhistory .lihistory:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #dedede transparent transparent;
+}
+
+.timeline .ulhistory .lihistory:nth-child(even) div {
+  left: -280px;
+}
+
+.timeline .ulhistory .lihistory:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #dedede;
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+ EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– 
+
+.timeline .ulhistory .lihistory::after {
+  transition: background .5s ease-in-out;
+}
+
+.timeline .ulhistory .lihistory.in-view::after {
+  background: #dedede;
+}
+
+.timeline .ulhistory .lihistory div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+/*.timeline .ulhistory .lihistory:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}*/
+/*
+.timeline .ulhistory .lihistory:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}*/
+
+.timeline .ulhistory .lihistory.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+  .timeline .ulhistory .lihistory div {
+    width: 250px;
+  }
+  .timeline .ulhistory .lihistory:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline .ulhistory .lihistory {
+    margin-left: 20px;
+  }
+  .timeline .ulhistory .lihistory div {
+    width: calc(100vw - 91px);
+  }
+  .timeline .ulhistory .lihistory:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline .ulhistory .lihistory:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #dedede transparent transparent;
+  }
+}
